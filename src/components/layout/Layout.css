@@ -1,0 +1,27 @@
+.Layout {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc, #e2e8f0);
+}
+
+.Layout-header {
+  height: 230px;
+  background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Layout-header h1 {
+  color: white;
+  font-size: 64px;
+  letter-spacing: 2px;
+  text-shadow: 0 8px 30px rgba(0, 0, 0, 0.55);
+}
+
+.Layout-header h1 span {
+  color: #facc15;
+}
+
+.Layout-main {
+  padding: 30px 24px;
+}

@@ -1,0 +1,41 @@
+.SwitchButton {
+  position: relative;
+  display: inline-block;
+  width: 54px;
+  height: 30px;
+}
+
+.SwitchButton input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.SwitchButton span {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #475569;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.SwitchButton span::before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  top: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.SwitchButton input:checked + span {
+  background-color: #facc15;
+}
+
+.SwitchButton input:checked + span::before {
+  transform: translateX(24px);
+}

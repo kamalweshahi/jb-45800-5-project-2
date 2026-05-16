@@ -1,0 +1,19 @@
+.MoreInfo {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.MoreInfo img {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 10px;
+}
+
+.MoreInfo p {
+  margin: 8px 0;
+  color: #e5e7eb;
+  font-size: 16px;
+}

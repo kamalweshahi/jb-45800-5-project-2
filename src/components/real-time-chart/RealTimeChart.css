@@ -1,0 +1,72 @@
+.RealTimeChart {
+  width: 95%;
+  max-width: 1100px;
+  margin: 30px auto;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  color: white;
+}
+
+.RealTimeChart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.RealTimeChart-header h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.RealTimeChart-header h3 span {
+  color: #22c55e;
+}
+
+.RealTimeChart-header p {
+  margin: 6px 0 0;
+  color: #cbd5e1;
+}
+
+.RealTimeChart-live {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.RealTimeChart-info {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.RealTimeChart-info div {
+  background-color: rgba(255, 255, 255, 0.06);
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.RealTimeChart-info strong {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 6px;
+}
+
+.RealTimeChart-info span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .RealTimeChart-info {
+    grid-template-columns: 1fr;
+  }
+
+  .RealTimeChart-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
